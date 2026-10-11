@@ -40,6 +40,10 @@ and the newest events. It redraws when the local files change. It is read only.
 
 In a pane narrower than 110 columns, the details go under the board.
 
+Started inside [herdr](https://herdr.dev) but not on a terminal (by an agent such as Claude Code or Kiro),
+`task-rs tui` opens a herdr pane to the right of the one it was started from and runs there. Typed in a pane, it
+runs in that pane. `TASK_HERDR=0` turns the new pane off.
+
 ## Install the binary (no Rust needed)
 
 The binary is on a GitHub pre-release with a `task-rs-v*` tag, for Apple Silicon Macs. `task update` never
